@@ -1,0 +1,68 @@
+HYPOTHESIS TEST RESULTS (DATA-BASED OUTPUT)
+
+--------------------------------------------------
+Test 1: Normality Test (Shapiro-Wilk)
+--------------------------------------------------
+H0: The data is normally distributed
+H1: The data is not normally distributed
+
+Test Statistic = 0.73 (approx)
+p-value = 0.00000126
+
+Decision:
+Since p-value < 0.05, reject H0
+
+Conclusion:
+The Total_Sales data is NOT normally distributed.
+
+
+--------------------------------------------------
+Test 2: One-Sample T-Test
+--------------------------------------------------
+H0: Mean of Total_Sales is equal to benchmark
+H1: Mean is different
+
+Test Statistic = 0.00
+p-value = 1.0000
+
+Decision:
+Fail to reject H0
+
+Conclusion:
+No significant difference found.
+(Note: Benchmark equals sample mean, so result is expected)
+
+
+--------------------------------------------------
+Test 3: Regression Analysis Significance
+--------------------------------------------------
+Model: Total_Sales ~ Quantity
+
+R-squared = 0.4735
+
+Conclusion:
+The model explains 47.35% of variation in Total_Sales.
+This indicates a moderate relationship between Quantity and Sales.
+
+
+--------------------------------------------------
+Test 4: Distribution Insight
+--------------------------------------------------
+Observation:
+High standard deviation = 100,161
+
+Conclusion:
+Sales data shows high variability, indicating inconsistent performance.
+
+
+--------------------------------------------------
+FINAL SUMMARY
+--------------------------------------------------
+- Data is not normally distributed
+- Sales show high variability
+- Regression explains ~47% of variation
+- Multiple factors influence sales
+
+Overall Conclusion:
+Sales cannot be accurately predicted using a single variable.
+A multi-variable approach is recommended.
